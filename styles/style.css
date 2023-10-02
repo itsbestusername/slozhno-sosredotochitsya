@@ -2,4 +2,155 @@
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  max-inline-size: 375px;
+}
+
+.header {
+  display: grid;
+  padding: 10px;
+  inline-size: 100vw;
+  block-size: 100vh;
+}
+
+.decorated-zone {}
+
+.header__decorate {
+  display: flex;
+  justify-content: end;
+}
+
+.header__decorate-text {
+font-family: var(--main-font);
+font-size: 18px;
+font-weight: 400;
+line-height: 25px;
+}
+
+.header__decorate-text::after {
+content:"";
+width: 9px;
+height: 9px;
+background-image: url(../images/Ellipse.svg);
+fill: var(--main-text-color);
+filter: drop-shadow(0px 0px 4px var(--main-color));
+
+/* посмотреть почему кружок не отображается */
+}
+
+.header__theme-menu {
+
+}
+
+.header__theme-menu-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+
+.header__theme-menu-item {
+color: var(--main-color);
+text-align: end;
+font-family: var(--main-font);
+font-size: 18px;
+font-weight: 400;
+line-height: 100%;
+
+}
+
+.header__theme-menu-button {
+  background-color: transparent;
+  border: none;
+  padding: 0 13px;
+  
+  /* надо сделать выравнивание по центру */
+}
+
+.header__theme-menu-button:hover {
+  border: 1px solid rgba(255, 0, 112, 0.40);
+}
+
+.header__theme-menu-button:focus {
+  border-bottom: 1px solid var(--main-color);
+  padding-bottom: 5px;
+}
+
+.header__theme-menu-button_active {
+  pointer-events: none
+}
+
+.header__theme-menu-button_type_light {}
+
+.header__theme-menu-button_type_auto {}
+
+.header__theme-menu-button_type_dar {}
+
+.header__title {
+  display: grid;
+  max-inline-size: 94.6vw;
+  max-block-size: 51.2vh;
+  margin-block-end: 55px;
+}
+
+.header__title-text {
+  inline-size: 100%;
+  text-shadow: 4px 4px 0px var(--main-color);
+  font-family: var(--main-font);
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  font-weight: 700;
+  line-height: 82.5%; 
+}
+
+.header__main {
+
+}
+
+.title-decor {
+font-family: var(--main-font);
+font-size: 18px;
+font-weight: 700;
+line-height: 130%;
+}
+
+.main {
+  padding: 0 10px;
+}
+
+.cards {
+}
+
+.cards_heading {
+font-family: var(--main-font);
+font-size: 18px;
+font-weight: 700;
+line-height: 130%;
+margin-block-end: 20px;
+}
+
+.cards__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cards__list-item {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cards__list-text {
+  color: var(--card-text);
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+}
+
+.cards__list-text-accent {}
+
+.footer {
+  inline-size: 100vw;
+  block-size: 100vh;
 }
