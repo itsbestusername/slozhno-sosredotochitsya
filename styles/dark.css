@@ -4,7 +4,7 @@
   переключая тему
 */
 
-:root.theme-dark {
+:root {
   --main-color: #FF0070;
   --title-text:  #000028;
   --card-text: #F1B2CE;
@@ -18,22 +18,8 @@
     чем стили в медиазапросе предпочтений пользователя
   */
   background-color: var(--background-color);
+  background-image: url(../images/cover-image-dark.png);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
-
-.header__decorate-text {
-  color: var(--main-color);
-}
-
-.header__title-text {
-  color: #DB00FF;
-}
-
-.title-decor {
-  color: var(--title-text);
-  background-color: var(--main-color);
-}
-
-.cards_heading {
-  color:var(--main-color);
-}
-

@@ -22,9 +22,8 @@
   width: 25.038px;
   height: 24.999px;
   border-top: 1px solid var(--main-color);
-  border-right: 1px solid  var(--main-color); 
+  border-right: 1px solid var(--main-color);
 }
-
 
 .header::after {
   content: "";
@@ -34,7 +33,7 @@
   width: 25.038px;
   height: 24.999px;
   border-bottom: 1px solid var(--main-color);
-  border-left: 1px solid  var(--main-color); 
+  border-left: 1px solid var(--main-color);
 }
 
 .decorated-zone {
@@ -48,6 +47,7 @@
 }
 
 .header__decorate-text {
+  color: var(--main-color);
   display: inline-flex;
   align-items: center;
   font-family: var(--main-font);
@@ -99,7 +99,7 @@
   border: 1px solid rgba(255, 0, 112, 0.4);
 }
 
-.header__theme-menu-button:focus {
+.header__theme-menu-button:focus-visible {
   border-bottom: 1px solid var(--main-color);
   padding-bottom: 5px;
 }
@@ -118,7 +118,7 @@
 .header__theme-menu-button_type_auto {
 }
 
-.header__theme-menu-button_type_dar {
+.header__theme-menu-button_type_dark {
 }
 
 .header__title {
@@ -131,6 +131,7 @@
 
 .header__title-text {
   inline-size: 100%;
+  color: var(--heading-color);
   text-shadow: 4px 4px 0px var(--main-color);
   font-family: var(--main-font);
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
@@ -143,6 +144,7 @@
 }
 
 .title-decor {
+  background-color: var(--main-color);
   font-family: var(--main-font);
   font-size: 18px;
   font-weight: 700;
@@ -154,15 +156,18 @@
 }
 
 .cards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
-.cards_heading {
+.cards__first-title {
+  color: var(--main-color);
   font-family: var(--main-font);
   font-size: 18px;
   font-weight: 700;
   line-height: 130%;
   margin-block-start: 40px;
-  margin-block-end: 20px;
 }
 
 .cards__list {
@@ -186,10 +191,32 @@
   line-height: 130%;
 }
 
-.cards__list-text-accent {
+.cards_heading {
+  color: var(--main-color);
+  font-family: var(--main-font);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 130%;
+  margin-block-start: 50px;
+}
+
+.cards__list-link {
+  text-shadow: 2px 1px var(--main-color);
+  text-decoration: none;
+}
+
+.cards__list-item-title {
+  color: var(--title-text);
+font-weight: 400;
+
 }
 
 .footer {
   inline-size: 100vw;
   block-size: 100vh;
 }
+
+.pictures {
+  margin-block-start: 50px;
+}
+
