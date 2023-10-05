@@ -25,13 +25,19 @@
 }
 
 .page.theme_light {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
   background-color: var(--background-color);
   background-image: url(../images/cover-image-light.png);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
 }
+
+.theme_light .header__decorate-text::before {
+  display: none;
+}
+
+.theme_light .header__decorate-text::after {
+  display: none;
+}
+
+/* не работает скрытие rec в авто режиме и нет фона */
