@@ -2,7 +2,8 @@
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
-  min-inline-size: 375px;
+  min-inline-size: 100vw;
+  max-block-size: 100vh;
 }
 
 .header {
@@ -14,7 +15,7 @@
   block-size: 100vh;
 }
 
-.header::before {
+.decorated-zone::before {
   content: "";
   position: absolute;
   right: 10px;
@@ -25,7 +26,7 @@
   border-right: 1px solid var(--main-color);
 }
 
-.header::after {
+.decorated-zone::after {
   content: "";
   position: absolute;
   left: 10px;
@@ -34,9 +35,6 @@
   height: 24.999px;
   border-bottom: 1px solid var(--main-color);
   border-left: 1px solid var(--main-color);
-}
-
-.decorated-zone {
 }
 
 .header__decorate {
@@ -50,12 +48,17 @@
   color: var(--main-color);
   display: inline-flex;
   align-items: center;
+  block-size: 100%;
+  margin-block-end: 40.5px;
+}
+
+.header__decorate-text::before {
+  content: "REC";
+  color: var(--main-color);
   font-family: var(--main-font);
   font-size: 18px;
   font-weight: 400;
   line-height: 138.889%;
-  block-size: 100%;
-  margin-block-end: 40.5px;
 }
 
 .header__decorate-text::after {
@@ -65,7 +68,7 @@
   background-color: var(--main-color);
   border-radius: 50%;
   margin-left: 10px;
-  box-shadow: 0px 0px 4px 3px var(--main-color);
+  box-shadow: 0px 0px 3px 3px var(--main-color);
   margin-inline-end: 10px;
 }
 
@@ -108,9 +111,9 @@
   pointer-events: none;
 }
 
-.header__theme-menu-button_active:active {
+/* .header__theme-menu-button_active:active {
   border: 1px solid var(--main-color);
-}
+} */
 
 .header__theme-menu-button_type_light {
 }
@@ -130,9 +133,9 @@
 }
 
 .header__title-text {
-  inline-size: 100%;
   color: var(--heading-color);
   text-shadow: 4px 4px 0px var(--main-color);
+  inline-size: 100%;
   font-family: var(--main-font);
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   font-weight: 700;
@@ -144,6 +147,7 @@
 }
 
 .title-decor {
+  color: var(--dark-color);
   background-color: var(--main-color);
   font-family: var(--main-font);
   font-size: 18px;
@@ -206,17 +210,36 @@
 }
 
 .cards__list-item-title {
-  color: var(--title-text);
-font-weight: 400;
+  color: var(--dark-color);
+  font-weight: 400;
+}
+
+.pictures {
+  margin-block-start: 50px;
+  display: grid;
+  gap: 10px;
+}
+
+.pictures__img {
 
 }
 
 .footer {
   inline-size: 100vw;
   block-size: 100vh;
+  position: relative;
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.pictures {
-  margin-block-start: 50px;
+.footer__text {
+  color: var(--heading-color);
+  text-shadow: 2px 2px 0px var(--main-color);
+  font-family: var(--main-font);
+  font-size: 116px;
+  font-weight: 700;
+  line-height: 82.5%;
 }
-

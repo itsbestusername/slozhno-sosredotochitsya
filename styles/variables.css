@@ -1,8 +1,8 @@
 :root {
-  --main-color: #FF0070;
-  --heading-color: #DB00FF;
-  --title-text:  #000028;
-  --card-text: #F1B2CE;
-  --main-font: IBM Plex Mono;
+  --main-color: #ff0070;
+  --heading-color: #db00ff;
+  --dark-color: #000028;
+  --card-text: #f1b2ce;
   --background-color: #000028;
+  --main-font: IBM Plex Mono;
 }

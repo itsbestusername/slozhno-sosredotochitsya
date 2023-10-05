@@ -4,12 +4,24 @@
   переключая тему
 */
 
-:root {
-  --main-color: #FF0070;
-  --title-text:  #000028;
-  --card-text: #F1B2CE;
-  --main-font: 'IBM Plex Mono';
+.theme_dark {
+  --main-color: #ff0070;
+  --heading-color: #db00ff;
+  --dark-color: #000028;
+  --card-text: #f1b2ce;
   --background-color: #000028;
+  --main-font: IBM Plex Mono;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --main-color: #ff0070;
+    --heading-color: #db00ff;
+    --dark-color: #000028;
+    --card-text: #f1b2ce;
+    --background-color: #000028;
+    --main-font: IBM Plex Mono; 
+    }
 }
 
 .page.theme_dark {

@@ -11,13 +11,13 @@
     <link rel="stylesheet" href="./styles/globals.css" />
     <link rel="stylesheet" href="./styles/variables.css" />
     <link rel="stylesheet" href="./styles/style.css" />
-    <link rel="stylesheet" href="./styles/dark.css" />
     <link rel="stylesheet" href="./styles/light.css" />
+    <link rel="stylesheet" href="./styles/dark.css" />
   </head>
   <body class="page">
     <header class="header decorated-zone">
       <div class="header__decorate">
-        <p class="header__decorate-text" aria-hidden="true">REC</p>
+        <div class="header__decorate-text" aria-hidden="true"></div>
       </div>
       <nav class="header__theme-menu">
         <ul class="header__theme-menu-list">
@@ -192,9 +192,15 @@
       </section>
       <section class="pictures">
         <h3 class="title-decor">А можно в картинках?</h3>
-        <img class="pictures__img">
+        <img class="pictures__img" src="./images/sunset.png" alt="закат" loading="lazy">
+        <img class="pictures__img" src="./images/ice-cream.png" alt="мороженое" loading="lazy">
+        <img class="pictures__img" src="./images/sunset.png" alt="касета" loading="lazy">
+        <img class="pictures__img" src="./images/books.png" alt="книги" loading="lazy">
+        <img class="pictures__img" src="./images/street.png" alt="улица" loading="lazy">
       </section>
     </main>
-    <footer class="footer"></footer>
+    <footer class="footer decorated-zone">
+      <h2 class="footer__text">focus</h2>
+    </footer>
   </body>
 </html>
