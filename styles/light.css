@@ -40,4 +40,18 @@
   display: none;
 }
 
+.theme_light .decorated-zone::before {
+  border-top: 1px solid var(--dark-color);
+  border-right: 1px solid var(--dark-color);
+}
+
+.theme_light .decorated-zone::after {
+  border-bottom: 1px solid var(--dark-color);
+  border-left: 1px solid var(--dark-color);
+}
+
+.theme_light .header__theme-menu-item {
+  color: var(--dark-color);
+}
+
 /* не работает скрытие rec в авто режиме и нет фона */
