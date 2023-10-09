@@ -50,6 +50,10 @@
   border-left: 1px solid var(--dark-color);
 }
 
+.theme_light .cards__first-title {
+  color: var(--dark-color);
+}
+
 .theme_light .header__theme-menu-item {
   color: var(--dark-color);
 }

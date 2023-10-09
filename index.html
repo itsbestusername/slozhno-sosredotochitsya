@@ -16,35 +16,37 @@
   </head>
   <body class="page">
     <header class="header decorated-zone">
-      <div class="header__decorate">
-        <div class="header__decorate-text" aria-hidden="true"></div>
+      <div class="header__menu-row">
+        <div class="header__decorate">
+          <div class="header__decorate-text" aria-hidden="true"></div>
+        </div>
+        <nav class="header__theme-menu">
+          <ul class="header__theme-menu-list">
+            <li class="header__theme-menu-item">
+              <button
+                class="header__theme-menu-button header__theme-menu-button_type_light"
+              >
+                день
+              </button>
+            </li>
+            <li class="header__theme-menu-item">
+              <button
+                class="header__theme-menu-button header__theme-menu-button_active header__theme-menu-button_type_auto"
+                disabled
+              >
+                авто
+              </button>
+            </li>
+            <li class="header__theme-menu-item">
+              <button
+                class="header__theme-menu-button header__theme-menu-button_type_dark"
+              >
+                неон
+              </button>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <nav class="header__theme-menu">
-        <ul class="header__theme-menu-list">
-          <li class="header__theme-menu-item">
-            <button
-              class="header__theme-menu-button header__theme-menu-button_type_light"
-            >
-              день
-            </button>
-          </li>
-          <li class="header__theme-menu-item">
-            <button
-              class="header__theme-menu-button header__theme-menu-button_active header__theme-menu-button_type_auto"
-              disabled
-            >
-              авто
-            </button>
-          </li>
-          <li class="header__theme-menu-item">
-            <button
-              class="header__theme-menu-button header__theme-menu-button_type_dark"
-            >
-              неон
-            </button>
-          </li>
-        </ul>
-      </nav>
       <section class="header__title">
         <h1 class="header__title-text">no focus</h1>
       </section>
@@ -61,21 +63,21 @@
         <h2 class="cards__first-title">Почему сосредоточиться так сложно</h2>
         <ul class="cards__list">
           <li class="cards__list-item">
-            <h3 class="title-decor cards__list-item-title">Многозадачность</h3>
+            <h3 class="title-decor">Многозадачность</h3>
             <p class="cards__list-text">
               Особенно сложно сосредоточиться, когда задач много и все они —
               важные. Где же легендарная многозадачность, когда она так нужна
               вам (и всем нанимающим менеджерам этого мира)? А дело в том, что
               её просто не существует. Исследователи
-              <a class="cards__list-link" href="#">выяснили</a>, что мозгу тяжело концентрироваться даже на двух делах
-              одновременно. А когда в поле внимания попадает несколько важных
-              задач, организм паникует и выделяет кортизол и адреналин —
-              «гормоны стресса». Из-за этого мы работаем невнимательно:
-              ошибаемся и быстро устаём.
+              <a class="cards__list-link" href="#">выяснили</a>, что мозгу
+              тяжело концентрироваться даже на двух делах одновременно. А когда
+              в поле внимания попадает несколько важных задач, организм паникует
+              и выделяет кортизол и адреналин — «гормоны стресса». Из-за этого
+              мы работаем невнимательно: ошибаемся и быстро устаём.
             </p>
           </li>
           <li class="cards__list-item">
-            <h3 class="title-decor cards__list-item-title">Дофамин</h3>
+            <h3 class="title-decor">Дофамин</h3>
             <p class="cards__list-text">
               С гормонами стресса всё понятно, но дальше — ещё интереснее. В
               нашей невозможности сосредоточиться замешана и полная
@@ -90,10 +92,12 @@
         </ul>
       </section>
       <section class="cards tablet-style tablet-margin">
-        <h2 class="cards_heading tablet-width">Что снижает концентрацию внимания?</h2>
-        <ul class="cards__list">
-          <li class="cards__list-item">
-            <h3 class="title-decor cards__list-item-title">Многозадачность</h3>
+        <h2 class="cards_heading tablet-width">
+          Что снижает концентрацию внимания?
+        </h2>
+        <ul class="cards__list desktop-direction">
+          <li class="cards__list-item desktop-width">
+            <h3 class="title-decor">Многозадачность</h3>
             <p class="cards__list-text">
               Как концентрация может снижаться из-за… концентрации? Любая
               стрессовая ситуация (и резко меняющийся мир в целом) заставляет
@@ -103,8 +107,8 @@
               может не выдержать, если не давать ей отдохнуть.
             </p>
           </li>
-          <li class="cards__list-item">
-            <h3 class="title-decor cards__list-item-title">Еда</h3>
+          <li class="cards__list-item desktop-width">
+            <h3 class="title-decor">Еда</h3>
             <p class="cards__list-text">
               «Быстрые углеводы» — сахар, белый хлеб, сладости — молниеносно
               доставляют в мозг энергию и помогают ему лучше работать. Но уходит
@@ -114,8 +118,8 @@
               хотим ещё больше быстрых углеводов.
             </p>
           </li>
-          <li class="cards__list-item">
-            <h3 class="title-decor cards__list-item-title">Гаджеты</h3>
+          <li class="cards__list-item desktop-width">
+            <h3 class="title-decor">Гаджеты</h3>
             <p class="cards__list-text">
               Да-да, это та самая ситуация, когда на экране ноутбука — код, в
               наушниках — подкаст, а на компьютере фоном — ещё и видео с
@@ -133,13 +137,16 @@
           Как концентрироваться лучше, чем золотая рыбка (то есть дольше трёх
           секунд)
         </h2>
-        <!-- <h2 class="title-decor cards__list-item-title">5 простых (на самом деле не очень) советов</h2> -->
         <ul class="cards__list">
           <li class="cards__list-item">
-            <h2 class="title-decor cards__list-item-title">5 простых (на самом деле не очень) советов</h2>
-          </li>  
+            <h2 class="title-decor">
+              5 простых (на самом деле не очень) советов
+            </h2>
+          </li>
           <li class="cards__list-item">
-            <h3 class="cards__list-item-title title-decor">Представьте небо и облака</h3>
+            <h3 class="title-decor cards__list-item-title">
+              Представьте небо и облака
+            </h3>
             <p class="cards__list-text">
               Или листья в ручье. Тут дело в лёгкой медитации, которая помогает
               успокоиться. Ведь часто именно тревожные мысли о сложных задачах
@@ -193,13 +200,38 @@
         </ul>
       </section>
       <section class="pictures tablet-margin">
-        <h3 class="title-decor cards__list-item-title">А можно в картинках?</h3>
+        <h3 class="title-decor">А можно в картинках?</h3>
         <div class="pictures__area">
-          <img class="pictures__area-img pictures__area-sunset" src="./images/sunset.png" alt="закат" loading="lazy">
-          <img class="pictures__area-img pictures__area-ice-cream" src="./images/ice-cream.png" alt="мороженое" loading="lazy">
-          <img class="pictures__area-img pictures__area-tape" src="./images/tape.png" alt="касета" loading="lazy">
-          <img class="pictures__area-img pictures__area-books" src="./images/books.png" alt="книги" loading="lazy">
-          <img class="pictures__area-img pictures__area-street" src="./images/street.png" alt="улица" loading="lazy">
+          <img
+            class="pictures__area-img pictures__area-sunset"
+            src="./images/sunset.png"
+            alt="закат"
+            loading="lazy"
+          />
+          <img
+            class="pictures__area-img pictures__area-ice-cream"
+            src="./images/ice-cream.png"
+            alt="мороженое"
+            loading="lazy"
+          />
+          <img
+            class="pictures__area-img pictures__area-tape"
+            src="./images/tape.png"
+            alt="касета"
+            loading="lazy"
+          />
+          <img
+            class="pictures__area-img pictures__area-books"
+            src="./images/books.png"
+            alt="книги"
+            loading="lazy"
+          />
+          <img
+            class="pictures__area-img pictures__area-street"
+            src="./images/street.png"
+            alt="улица"
+            loading="lazy"
+          />
         </div>
       </section>
     </main>
