@@ -5,23 +5,24 @@
 */
 
 .theme_light {
-  --main-color: #FF8DCB;
-  --heading-color: #FFC2E6;
-  --dark-color:#353430;
+  --main-color: #ff8dcb;
+  --heading-color: #ffc2e6;
+  --dark-color: #353430;
   --card-text: #353430;
-  --background-color: #FFF1F7;
+  --background-color: #fff1f7;
+  --shadow-color: #ff0070;
   --main-font: IBM Plex Mono;
 }
 
 @media (prefers-color-scheme: light) {
   :root {
-    --main-color: #FF8DCB;
-    --heading-color: #FFC2E6;
-    --dark-color:#353430;
+    --main-color: #ff8dcb;
+    --heading-color: #ffc2e6;
+    --dark-color: #353430;
     --card-text: #353430;
-    --background-color: #FFF1F7;
-    --main-font: IBM Plex Mono; 
-    }
+    --background-color: #fff1f7;
+    --main-font: IBM Plex Mono;
+  }
 }
 
 .page.theme_light {
@@ -51,7 +52,7 @@
 }
 
 .theme_light .header__theme-menu-button:hover {
-  border: 1px solid rgba(50, 49, 45, 0.40);
+  border: 1px solid rgba(50, 49, 45, 0.4);
 }
 
 .theme_light .header__theme-menu-button:focus {
@@ -72,4 +73,10 @@
 
 .theme_light .header__theme-menu-button_active {
   outline: 1px solid var(--dark-color);
+}
+
+@media (width >= 1024px) {
+  .theme_light .header__title-text {
+    text-shadow: 4px 4px 0px var(--shadow-color);
+  }
 }

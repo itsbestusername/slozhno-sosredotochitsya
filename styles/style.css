@@ -214,6 +214,10 @@
 }
 
 .cards__list-link:focus {
+  border: none;
+}
+
+.cards__list-link:focus-visible {
   border: 1px solid var(--card-text);
 }
 
@@ -223,7 +227,6 @@
 
 .pictures {
   margin-block-start: 50px;
-  grid-template-columns: minmax(375px, 768px);
 }
 
 .pictures__area {
@@ -333,7 +336,7 @@
   .pictures__area-img {
     max-inline-size: 475px;
     object-fit: cover;
-    background-size: cover;
+    object-position: center;
     width: 100%;
     height: 100%;
   }
@@ -343,6 +346,8 @@
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 1;
+    min-inline-size: 475px;
+    max-inline-size: 649px;
   }
 
   .pictures__area-ice-cream {
@@ -350,6 +355,8 @@
     grid-column-end: 4;
     grid-row-start: 1;
     grid-row-end: 3;
+    min-inline-size: 229px;
+    max-inline-size: 315px;
   }
 
   .pictures__area-tape {
@@ -357,6 +364,8 @@
     grid-column-end: 2;
     grid-row-start: 2;
     grid-row-end: 5;
+    min-inline-size: 229px;
+    max-inline-size: 315px;
   }
 
   .pictures__area-books {
@@ -364,6 +373,8 @@
     grid-column-end: 2;
     grid-row-start: 2;
     grid-row-end: 2;
+    min-inline-size: 230px;
+    max-inline-size: 315px;
   }
 
   .pictures__area-street {
@@ -371,6 +382,8 @@
     grid-column-end: 4;
     grid-row-start: 3;
     grid-row-end: 5;
+    min-inline-size: 479px;
+    max-inline-size: 649px;
   }
 
   .footer {
@@ -410,10 +423,6 @@
     margin-block-end: 143px;
   }
 
-  .header__title-text {
-    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-  }
-
   .header__main {
     margin-block-start: 0px;
   }
@@ -447,8 +456,24 @@
     grid-template-columns: repeat(3, minmax(315px, 1fr));
   }
 
-  .pictures__area-img {
-    max-inline-size: 649px;
+  .pictures__area-sunset {
+    min-inline-size: 649px;
+  }
+
+  .pictures__area-ice-cream {
+    min-inline-size: 315px;
+  }
+
+  .pictures__area-tape {
+    min-inline-size: 315px;
+  }
+
+  .pictures__area-books {
+    min-inline-size: 315px;
+  }
+
+  .pictures__area-street {
+    min-inline-size: 649px;
   }
 
   .footer__text {
