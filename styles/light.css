@@ -50,6 +50,14 @@
   border-left: 1px solid var(--dark-color);
 }
 
+.theme_light .header__theme-menu-button:hover {
+  border: 1px solid rgba(50, 49, 45, 0.40);
+}
+
+.theme_light .header__theme-menu-button:focus {
+  border-bottom: 1px solid var(--dark-color);
+}
+
 .theme_light .cards__first-title {
   color: var(--dark-color);
 }
@@ -58,4 +66,10 @@
   color: var(--dark-color);
 }
 
-/* не работает скрытие rec в авто режиме и нет фона */
+.theme_light .cards_heading {
+  color: var(--dark-color);
+}
+
+.theme_light .header__theme-menu-button_active {
+  outline: 1px solid var(--dark-color);
+}
