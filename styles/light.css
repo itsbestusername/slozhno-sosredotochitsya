@@ -4,7 +4,7 @@
   переключая тему
 */
 
-.theme_light {
+.page.theme_light {
   --main-color: #ff8dcb;
   --heading-color: #ffc2e6;
   --dark-color: #353430;
@@ -12,6 +12,7 @@
   --background-color: #fff1f7;
   --shadow-color: #ff0070;
   --main-font: IBM Plex Mono;
+  --background-image: url(../images/cover-image-light.png);
 }
 
 @media (prefers-color-scheme: light) {
@@ -21,16 +22,59 @@
     --dark-color: #353430;
     --card-text: #353430;
     --background-color: #fff1f7;
+    --shadow-color: #ff0070;
     --main-font: IBM Plex Mono;
+    --background-image: url(../images/cover-image-light.png);
   }
-}
 
-.page.theme_light {
-  background-color: var(--background-color);
-  background-image: url(../images/cover-image-light.png);
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+  .header__decorate-text::before {
+    display: none;
+  }
+  
+  .header__decorate-text::after {
+    display: none;
+  }
+  
+  .decorated-zone::before {
+    border-top: 1px solid var(--dark-color);
+    border-right: 1px solid var(--dark-color);
+  }
+  
+  .decorated-zone::after {
+    border-bottom: 1px solid var(--dark-color);
+    border-left: 1px solid var(--dark-color);
+  }
+  
+  .header__theme-menu-button:hover {
+    border: 1px solid rgba(50, 49, 45, 0.4);
+  }
+  
+  .header__theme-menu-button:focus {
+    border-bottom: 1px solid var(--dark-color);
+  }
+  
+  .cards__first-title {
+    color: var(--dark-color);
+  }
+  
+  .header__theme-menu-item {
+    color: var(--dark-color);
+  }
+  
+  .cards_heading {
+    color: var(--dark-color);
+  }
+  
+  .header__theme-menu-button_active {
+    outline: 1px solid var(--dark-color);
+  }
+  
+  @media (width >= 1024px) {
+    .header__title-text {
+      text-shadow: 4px 4px 0px var(--shadow-color);
+    }
+  }
+  
 }
 
 .theme_light .header__decorate-text::before {

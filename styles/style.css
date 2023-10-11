@@ -4,6 +4,11 @@
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   min-inline-size: 100vw;
   max-block-size: 100vh;
+  background-color: var(--background-color);
+  background-image: var(--background-image);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 .header {
