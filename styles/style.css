@@ -47,7 +47,7 @@
   display: flex;
   justify-content: end;
   max-block-size: 26px;
-  margin-block-end: 40.5px;
+  margin-block-end: 6vh;
 }
 
 .header__decorate-text {
@@ -61,7 +61,7 @@
 .header__decorate-text::before {
   content: "REC";
   color: var(--main-color);
-  font-family: var(--main-font);
+  font-family: var(--main-font), Arial, sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 138.889%;
@@ -117,6 +117,11 @@
   border-bottom: 1px solid var(--main-color);
 }
 
+.header__theme-menu-button:focus-visible {
+  outline: none;
+  border-bottom: 1px solid var(--main-color);
+}
+
 .header__theme-menu-button_active {
   pointer-events: none;
   outline: 1px solid var(--main-color);
@@ -128,18 +133,19 @@
   color: var(--heading-color);
   text-shadow: 4px 4px 0px var(--main-color);
   inline-size: 100%;
-  font-family: var(--main-font);
+  font-family: var(--main-font), Arial, sans-serif;
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   font-weight: 700;
   line-height: 82.5%;
-  margin-block-start: 67.5px;
-  margin-block-end: 55px;
+  margin-block-start: 10vh;
+  margin-block-end: 8vh;
 }
 
 .header__main {
   margin-block-end: 56px;
   display: flex;
   justify-content: end;
+  max-block-size: 117px;
 }
 
 .header__main-text {
@@ -220,6 +226,7 @@
 
 .cards__list-link:focus-visible {
   border: 1px solid var(--card-text);
+  outline: none;
 }
 
 .cards__list-item-title {
@@ -256,7 +263,7 @@
 .footer__text {
   color: var(--heading-color);
   text-shadow: 2px 2px 0px var(--main-color);
-  font-family: var(--main-font);
+  font-family: var(--main-font), Arial, sans-serif;
   font-size: 116px;
   font-weight: 700;
   line-height: 82.5%;
@@ -279,18 +286,18 @@
   }
 
   .header__decorate {
-    margin-block-end: 148.5px;
+    margin-block-end: 14vh;
   }
 
   .header__title-text {
     max-block-size: 100px;
-    margin-block-start: 172.5px;
+    margin-block-start: 17vh;
     margin-left: -20px;
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 
   .header__main {
-    margin-block-start: 107px;
+    margin-block-start: 11vh;
   }
 
   .main {
@@ -322,6 +329,12 @@
   .cards_heading {
     margin-block-start: 0;
     min-inline-size: 236px;
+  }
+
+  .tablet-style {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
   }
 
   .pictures__area {
