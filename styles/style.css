@@ -211,6 +211,12 @@
   margin-block-start: 50px;
 }
 
+.title-style {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 .cards__list-link {
   text-shadow: 2px 1px var(--main-color);
   text-decoration: none;
@@ -314,10 +320,6 @@
     min-inline-size: 236px;
   }
 
-  .tablet-style {
-    flex-direction: column;
-  }
-
   .tablet-margin {
     margin-block-start: 80px;
   }
@@ -331,11 +333,11 @@
     min-inline-size: 236px;
   }
 
-  .tablet-style {
+  /* .tablet-style {
     display: flex;
     flex-direction: column;
     gap: 20px;
-  }
+  } */
 
   .pictures__area {
     display: grid;
