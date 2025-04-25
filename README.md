@@ -1,5 +1,8 @@
 # Проект "Сложно сосредоточиться"
 [Ссылка на сайт](https://itsbestusername.github.io/slozhno-sosredotochitsya/)
+## Описание
+Верстка адаптивной страницы с возможностью переключения светлой/темной темы
+
 ## Установка и запуск
 Клонируйте репозиторий: git clone https://github.com/itsbestusername/slozhno-sosredotochitsya
 
